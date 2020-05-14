@@ -1,0 +1,35 @@
+.expand {
+  animation: expand-category 200ms forwards;
+}
+
+.unfolder {
+  animation: unfolder-category 200ms forwards;
+}
+
+.subCatetorires-show {
+  display: block;
+}
+
+.subCatetorires-hide {
+  display: none;
+}
+
+@keyframes expand-category {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes unfolder-category {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
